@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Priscilla Vargas">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Juego de Ahorcado</title>
+        <link rel="icon" href="favicon/favicon_io/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="preconnect" href="https://fonts.google.com/specimen/Indie+Flower">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    </head>
+    <body style="background: url(imagenes/casa.fondo2.png); background-size: 100% 100%; background-repeat: no-repeat; background-attachment: fixed ;">
+        <header>
+            <div class="caja-superior">
+                <h1 class="titulo-principal">Ahorcado</h1>
+                <img class="logo" src="imagenes/Logo.png" alt="logo Alura">
+                <img class = "cuerda" src="imagenes/ahorcado_0.png" width="50px">
+            </div>
+        </header>
+
+        <main>
+            <div class="botones">
+                <button id="boton" onclick="partida()" class="botonIniciar">Nuevo Juego</button>
+                <button id="boton" onclick="anadir()" class="botonAniadir">Añadir una palabra</button>
+            </div>
+        </main>
+        <footer>
+            <p class="copyright">&copy Copyright Priscilla Vargas| Alura-2022</p>
+        </footer>
+
+        <script src="js/redirect-inicio.js"></script>
+
+    </body>
+</html>

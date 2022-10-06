@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Priscilla Vargas">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Juego de Ahorcado</title>
+        <link rel="icon" href="favicon/favicon_io/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/style-agregar.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="preconnect" href="https://fonts.google.com/specimen/Indie+Flower">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    </head>
+    <body style="background: url(imagenes/casa.fondo2.png); background-size: 100% 100%; background-repeat: no-repeat; background-attachment: fixed ;">
+        <header>
+            <div class="caja-superior">
+                <h1 class="titulo-principal">Ahorcado</h1>
+                <img class="logo" src="imagenes/Logo.png" alt="logo Alura">
+                <img class = "cuerda" src="imagenes/ahorcado_0.png" width="50px">
+            </div>
+        </header>
+        <main>
+            <section>
+                <label class="ingrese">Ingrese aqui la palabra que desea agregar</label>
+                <p class="nota">*Nota: Las palabras en el juego se relacionan con tematicas de horror, cuentos o historias (maximo de caracteres: 12)</p>
+
+                <input class="inputaniadir" type="text" maxlength="12" onkeypress="return (event.charCode >= 65 && event.charCode <= 90 || event.charCode >= 97 && event.charCode <= 122)">
+                <button id = "anadir" class="buttonaniadir">Añadir palabra y comenzar</button>
+                <button class="buttonaniadir" onclick="inicio()" >Volver</button>
+            </section>
+        </main>
+        <footer>
+            <p class="copyright">&copy Copyright Priscilla Vargas| Alura-2022</p>
+        </footer>
+        
+        <script src="js/redirect-inicio.js"></script>
+        <script src="js/anadir-palabra.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Priscilla Vargas">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Juego de Ahorcado</title>
+        <link rel="icon" href="favicon/favicon_io/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/style-partida.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="preconnect" href="https://fonts.google.com/specimen/Indie+Flower">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    </head>
+    <body style="background: url(imagenes/fondo-partida.png); background-size: 100% 100%; background-repeat: no-repeat; background-attachment: fixed ;">
+        <header>
+            <div class="caja-superior">
+                <h1 class="titulo-principal">Ahorcado</h1>
+                <img class="logo" src="imagenes/Logo.png" alt="logo Alura">
+                <img class = "cuerda" src="imagenes/ahorcado_0.png" width="50px">
+            </div>
+        </header>
+        <main>
+            <div class="cuadroDeJuego">
+                <canvas class="ahorcado"></canvas>
+                <p class="palabra"></p>
+                <div id="letras" class="primeraLinea">
+                    <button id="Q" class="letra">Q</button>
+                    <button id="W" class="letra">W</button>
+                    <button id="E" class="letra">E</button>
+                    <button id="R" class="letra">R</button>
+                    <button id="T" class="letra">T</button>
+                    <button id="Y" class="letra">Y</button>
+                    <button id="U" class="letra">U</button>
+                    <button id="I" class="letra">I</button>
+                    <button id="O" class="letra">O</button>
+                    <button id="P" class="letra">P</button>
+                </div>
+                <div id = "letras" class="segundaLinea">
+                    <button id="A" class="letra">A</button>
+                    <button id="S" class="letra">S</button>
+                    <button id="D" class="letra">D</button>
+                    <button id="F" class="letra">F</button>
+                    <button id="G" class="letra">G</button>
+                    <button id="H" class="letra">H</button>
+                    <button id="J" class="letra">J</button>
+                    <button id="K" class="letra">K</button>
+                    <button id="L" class="letra">L</button>
+                    <button id="Ñ" class="letra">Ñ</button>    
+                </div>
+                <div id = "letras" class="terceraLinea">
+                
+                    <button id="Z" class="letra">Z</button>
+                    <button id="X" class="letra">X</button>
+                    <button id="C" class="letra">C</button>
+                    <button id="V" class="letra">V</button>
+                    <button id="B" class="letra">B</button>
+                    <button id="N" class="letra">N</button>
+                    <button id="M" class="letra">M</button>
+                </div>
+            </div>
+            <div class="botonesSup">
+                <button id="boton2" class = "comenzar" onclick="partida()" >Nuevo Juego</button>
+                <button id="boton2" class = "rendirse" onclick="inicio()">Rendirse</button>
+            </div>
+        </main>
+        <footer>
+            <p class="copyright">&copy Copyright Priscilla Vargas| Alura-2022</p>
+        </footer>
+        <script src="js/redirect-inicio.js"></script>
+        <script src="js/p-aleatoria.js"></script>
+        <script src="js/canvas.js"></script>
+        <script src="js/juego.js"></script>
+        </body> 
+</html>
